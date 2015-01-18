@@ -60,3 +60,9 @@ Tailing example note two
 
 ## Todo
 - GitHub user support
+
+
+---
+
+## Contact
+Twitter: [@gopatrik](https://twitter.com/gopatrik)
