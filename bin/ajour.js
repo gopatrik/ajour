@@ -3,23 +3,40 @@
 "use strict";
 
 var fs = require('fs');
-var argv = require('minimist')(process.argv.slice(2));
-
-// console.dir(argv);
+var minimist = require('minimist');
 
 
-// include timestamp unless -t flag set
-var timestamp = argv.t ? "" : '\n# ' + new Date() +'\n';
+// Douglas Crockford Object instantiation style
+var Ajour = function () {
+	// get argumentents
+	var argv = minimist(process.argv.slice(2));
 
-// join the _ argument string
-var entry = argv._.join(' ') + '\n';
+	// include timestamp unless -t flag set
+	var timestamp = argv.t ? "" : '\n# ' + new Date() +'\n';
 
-var entry = timestamp + entry;
+	// join the _ argument string
+	var entry = argv._.join(' ') + '\n';
 
-fs.appendFile('ajour.md', entry, function(err) {
-    if(err) {
-        console.log(err);
-    } else {
-        console.log('The file was saved!');
-    }
-}); 
+	var entry = timestamp + entry;
+
+	var write = function () {
+		fs.appendFile('ajour.md', entry, function(err) {
+		    if(err) {
+		        console.log(err);
+		    } else {
+		        console.log('The file was saved!');
+		    }
+		}); 
+	};
+
+	return Object.freeze({
+		write: write
+	});
+}
+
+
+var a = Ajour();
+a.write();
+
+
+
