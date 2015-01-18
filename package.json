@@ -1,6 +1,6 @@
 {
   "name": "ajour",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A simple command line journaling tool",
   "bin": {
     "ajour": "bin/ajour.js"
