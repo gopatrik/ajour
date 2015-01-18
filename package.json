@@ -1,0 +1,31 @@
+{
+  "name": "ajour",
+  "version": "0.0.0",
+  "description": "A simple command line journaling tool",
+  "bin": {
+    "ajour": "bin/ajour.js"
+  },
+  "scripts": {
+    "test": "echo \\\"Error: no test specified\\\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gopatrik/ajour.git"
+  },
+  "keywords": [
+    "cli",
+    "journal",
+    "journaling",
+    "note",
+    "notebook"
+  ],
+  "dependencies": {
+    "minimist":"1.1.0"
+  },
+  "author": "Patrik Gothe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gopatrik/ajour/issues"
+  },
+  "homepage": "https://github.com/gopatrik/ajour"
+}
