@@ -1,5 +1,5 @@
 # ajour
-Ajour is a simple command line tool for leaving notes on the go, perfect way to collaborative journal in git projects to make small notes, write down thoughts, ideas and comments or just managing a journal in personal projects.
+Ajour is a simple command line tool for leaving notes on the go. A simple way to keep a collaborative journal in git projects to make small notes, write down thoughts, ideas and comments or just managing a journal in personal projects.
 
 ## Installation
 ```bash
