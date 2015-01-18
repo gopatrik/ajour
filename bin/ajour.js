@@ -5,8 +5,7 @@
 var fs = require('fs');
 var minimist = require('minimist');
 
-
-// Douglas Crockford Object instantiation style
+// Douglas Crockford Object creation style
 var Ajour = function () {
 	// get argumentents
 	var argv = minimist(process.argv.slice(2));
@@ -17,6 +16,7 @@ var Ajour = function () {
 	// join the _ argument string
 	var entry = argv._.join(' ') + '\n';
 
+	// join atoms into final entry string
 	var entry = timestamp + entry;
 
 	var write = function () {
@@ -32,8 +32,7 @@ var Ajour = function () {
 	return Object.freeze({
 		write: write
 	});
-}
-
+};
 
 var a = Ajour();
 a.write();
