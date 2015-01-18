@@ -16,25 +16,23 @@ $ npm install -g
 ```
 
 ## Usage
-To make an entry we simply type *ajour* followed by our message:
+To make an entry saying "Hello World" we simply type:
 ```bash
-$ ajour Example note one
-$ ajour Example note two
-
+ajour Hello World
 ```
 
 Will produce the file **ajour.md** if it (doesn't already exist):
 ```markdown
-# Sun Jan 18 2015 19:21:50 GMT+0100 (CET)
-Example note one
-
-# Sun Jan 18 2015 19:21:59 GMT+0100 (CET)
-Example note two
+# Sun Jan 18 2015 19:20:30 GMT+0100 (CET)
+Hello World
 ```
 
-You could also tail on the previous entry
+### Tailing
+We could also tail on the previous entry by appending the -t flag, and our entry won't be prepended with a timestamp.
 
 ```bash
+$ ajour Example note one
+$ ajour Example note two
 $ ajour Tailing example note two -t
 ```
 
