@@ -1,5 +1,7 @@
 # ajour
-Ajour is a simple command line tool for leaving notes on the go. A simple way to keep a collaborative journal in git projects to make small notes, write down thoughts, ideas and comments or just managing a journal in personal projects.
+Ajour is a simple command line tool for leaving notes on the go.
+
+A simple way to keep a **collaborative journal in git projects** to make small notes, write down thoughts, ideas and comments or just managing a journal in personal projects.
 
 ## Installation
 ```bash
@@ -14,22 +16,46 @@ $ npm install -g
 ```
 
 ## Usage
+To make an entry we simply type *ajour* followed by our message:
 ```bash
-$ ajour Example note
+$ ajour Example note one
+$ ajour Example note two
+
 ```
 
 Will produce the file **ajour.md** if it (doesn't already exist):
 ```markdown
 # Sun Jan 18 2015 19:21:50 GMT+0100 (CET)
-Example note
+Example note one
+
+# Sun Jan 18 2015 19:21:59 GMT+0100 (CET)
+Example note two
 ```
+
+You could also tail on the previous entry
+
+```bash
+$ ajour Tailing example note two -t
+```
+
+**ajour.md**:
+```markdown
+# Sun Jan 18 2015 19:21:50 GMT+0100 (CET)
+Example note one
+
+# Sun Jan 18 2015 19:21:59 GMT+0100 (CET)
+Example note two
+Tailing example note two
+```
+
 
 ### Flags
 ```bash
 -t 				-- Tail on previous note (no timestamp)
 ```
 
-## Suggestions
+## Suggestions/Thoughts
+- Have the file ajour.md append from the top instead of the bottom.
 - Alias "ajour" to something super short like "n" for more efficient note-taking.
 
 ## Todo
