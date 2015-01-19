@@ -17,6 +17,8 @@ $ cd ajour
 $ npm install -g
 ```
 
+*You might have to restart your shell for the ajour command to work*
+
 ## Usage
 To make an entry saying "Hello World" we simply type:
 ```bash
