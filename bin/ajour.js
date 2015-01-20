@@ -8,7 +8,7 @@ var minimist = require('minimist');
 // Douglas Crockford Object creation style
 var Ajour = function () {
 	// get argumentents
-	var argv = minimist(process.argv.slice(2));
+	var argv = minimist(process.argv.slice(2), {boolean: 't'});
 
 	// include timestamp unless -t flag set
 	var timestamp = argv.t ? "" : '\n# ' + new Date() +'\n';
