@@ -25,7 +25,7 @@ To make an entry saying "Hello World" we simply type:
 ajour Hello World
 ```
 
-Will produce the file **ajour.md** if it (doesn't already exist):
+Will produce the file **ajour.md** (if it doesn't already exist):
 ```markdown
 # Sun Jan 18 2015 19:20:30 GMT+0100 (CET)
 Hello World
