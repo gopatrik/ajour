@@ -23,7 +23,7 @@
     "minimist":"1.1.0"
   },
   "author": "Patrik Gothe",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/gopatrik/ajour/issues"
   },
