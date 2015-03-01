@@ -2,9 +2,7 @@
   "name": "ajour",
   "version": "0.0.3",
   "description": "A simple command line journaling tool",
-  "bin": {
-    "ajour": "bin/ajour.js"
-  },
+  "bin": "bin/ajour.js",
   "scripts": {
     "test": "echo \\\"Error: no test specified\\\" && exit 1"
   },
